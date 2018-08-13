@@ -16,3 +16,22 @@ int example01() {
 	cv::destroyWindow("Hamy");
 	return 1;
 }
+
+int playVideo(std::string argv) {
+
+	// Set window name
+	cv::namedWindow("Man3D", cv::WINDOW_AUTOSIZE);
+
+	// 
+	cv::VideoCapture cap;
+	cap.open(argv);
+
+	cv::Mat frame;
+	while (1) {
+		cap >> frame;
+		if (!frame.data) break;
+		cv::imshow("Man3D", frame);
+		if (cv::waitKey(33) >= 0) break;
+	}
+	return 1;
+}
