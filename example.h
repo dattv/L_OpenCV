@@ -4,7 +4,7 @@
 
 #include "include.h"
 
-void example01();
+int example01();
 
 #endif // !_EXAMPLE_H
 
