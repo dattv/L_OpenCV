@@ -4,6 +4,8 @@
 
 #include <stdio.h>
 #include <string>
+#include <iostream>
+#include <fstream>
 #include "opencv2/core/core.hpp"
 #include "opencv2/highgui/highgui.hpp"
 #include "opencv/cv.h"
