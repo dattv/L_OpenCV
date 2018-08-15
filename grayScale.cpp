@@ -11,6 +11,7 @@ int main() {
 	// 
 	cv::cvtColor(img_rgb, img_gray, cv::COLOR_BGR2GRAY);
 
+
 	cv::namedWindow("example origina", cv::WINDOW_AUTOSIZE);
 	cv::namedWindow("example Gray", cv::WINDOW_AUTOSIZE);
 	cv::namedWindow("example canny", cv::WINDOW_AUTOSIZE);
