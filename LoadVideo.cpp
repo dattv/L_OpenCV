@@ -22,6 +22,9 @@ int main() {
 		if (!frame.data) break;
 		cv::imshow("example2_10", frame);
 		if (cv::waitKey(33) >= 0) break;
+
+		char c = (char)cv::waitKey(10);
+		if (c == 'c') break;
 	}
 
 	cv::waitKey(0);
